@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.header__title {
+  margin: 0 1rem 0 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #ff69b4;
+}
+
+.header__subtitle {
+  color: #c0caf5;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0;
+}

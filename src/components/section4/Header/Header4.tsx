@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-const Header4 = ({
-  title = 'Header 4 Section',
-  subtitle = 'This is the fourth and final header section.'
-}) => {
+interface Header4Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const Header4: React.FC<Header4Props> = ({ title = 'Header 4 Section', subtitle = 'This is the fourth header section with additional content.' }) => {
   return (
     <section className={styles.header}>
       <h2 className={styles.header__title}>{title}</h2>

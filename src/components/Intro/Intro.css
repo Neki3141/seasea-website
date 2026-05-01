@@ -1,0 +1,60 @@
+/* Full‑screen container */
+.intro‑container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+/* Background image layer */
+.bg‑image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.bg‑image.fade‑in  { opacity: 1; }
+.bg‑image.fade‑out { opacity: 0; }
+
+/* Glass‑morphism card */
+.intro‑card {
+  position: relative;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+  scroll-snap-coordinate: 800% 100%;
+  animation: textFade 1.5s ease-out;
+}
+
+/* Text styles */
+.team‑name {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+}
+.slogan {
+  margin: 0.5rem 0 0;
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+
+/* Fade‑in animation for the card text */
+@keyframes textFade {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-height: 500px) {
+  .intro‑card {
+    padding: 1.5rem 2rem;
+  }
+}
