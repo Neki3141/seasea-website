@@ -1,0 +1,49 @@
+.navbar-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    width: 95vw;
+    justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 16px;
+    height: 10vh;
+    padding: 0 20px; 
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-box div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; 
+}
+
+.navbar-box h1, 
+.navbar-box p {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-box .right {
+    justify-content: flex-end;
+    flex: 1; 
+    text-align: right;
+}
+
+.navbar-box .left {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.navbar-box .middle {
+    flex: 2; 
+    justify-content: center;
+}
