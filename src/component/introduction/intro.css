@@ -1,43 +1,30 @@
+
+body, div{
+    padding: 0px;
+    margin: 0px;
+}
+
+
 .home-page{
     display: flex;
     flex-direction: row;
     height: 70vh;
     align-items: center;
     width: 100vw;
-    justify-content: center;
+    justify-content: left;
     margin: 0;
     background-color: lightblue;
 }
 
-.home-page .left ,.home-page .right { 
-    align-items: center;
-    width: 100vh;
-    height: 80%;
-    text-align: left;
-    margin-left: 2vh;
-    margin-right: 10vh;
-    border: 3px solid whitesmoke;
 
-}
-
-.home-page .left{
+.textbox-homepage{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
+    padding: 10vw;
 }
 
-.home-page .top-left{
-    width: fit-content;
-    height: fit-content;
-    color: white;
-    margin-top: -10vh;
-    margin-left: 20vh;
-}
-
-.home-page .bottom-left{
-    font-size: 2vh;
-    color: white;
-    margin-top: 20vh;
-    margin-left: 40vh;
+.textbox-homepage h1, h2{
+    text-align: left;
 }

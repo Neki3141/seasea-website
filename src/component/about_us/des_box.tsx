@@ -1,3 +1,10 @@
+/*!
+ * @license
+ * Copyright (C) 2026 Ethan Bastian, Kien Nguyen
+ * All Rights Reserved. Licensed under GNU AGPLv3.
+ * Full license text available in the source repository.
+ */
+
 import './des_box.css'
 
 function DesBox() {
