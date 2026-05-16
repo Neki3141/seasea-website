@@ -1,23 +1,24 @@
-import React from 'react';
-import Intro from './components/Intro/Intro';
-import Section1 from './components/section1/Section1';
-import Section2 from './components/section2/Section2';
-import Section3 from './components/section3/Section3';
-import Section4 from './components/section4/Section4';
-import Footer from './components/Footer/Footer';
-import './App.css';
+/*!
+ * @license
+ * Copyright (C) 2026 Ethan Bastian, Kien Nguyen
+ * All Rights Reserved. Licensed under GNU AGPLv3.
+ * Full license text available in the source repository.
+ */
+
+import './App.css'
+import AboutUs from './component/about_us/about_us'
+import Intro from './component/introduction/intro'
+import Navbar from './component/navbar/navbar'
 
 function App() {
+
   return (
-    <div className="app">
-      <Intro />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Footer />
+    <div className='top'>
+        <Navbar />
+        <Intro />
+        <AboutUs />
     </div>
-  );
+              )
 }
 
-export default App;
+export default App
